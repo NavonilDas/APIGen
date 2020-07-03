@@ -1,0 +1,70 @@
+# Express Variable Name
+var app
+# Set the Port Number
+port 3000
+
+# Routers foldername default is routers if not specified
+router "hello_world"
+
+# Middleware foldername default is middleware if not specified
+middleware "middle_ware"
+
+# To Enable Authentication
+enable auth
+
+# To Enable File Upload
+enable upload
+
+# Angular api service folder
+angular "F:\myangular_project\myapis"
+
+# For Future Flutter support
+# flutter "F:\my_project\myapis"
+# For Future Android support
+# android "F:\my_project\myapis"
+
+# Starting api
+
+# Return Array without auth (Disabled auth)
+GET hello/world/:id A D
+# Query Parameters
+Q hello a b c d e9 __fa
+# Body Parameters
+B e f g h i j k l
+# Documentation For API
+DOC this is an hello world app 
+ENDDOC
+# Return Format Used By Clients like angular
+RETURN
+- a:int
+- d:string
+- e:float
+- f:bool
+- b
+    - c:int
+
+# Return Array with auth
+POST hello/world/:id A E
+# Query Parameters
+Q hello a b c d e9 __fa
+# Body Parameters
+B e f g h i j k l
+# Documentation For API
+DOC this is an hello world app 
+ENDDOC
+# Upload Datas
+UPLOAD
+- fieldname
+# Return Format Used By Clients like angular
+RETURN
+- a:int
+- d:string
+- e:float
+- f:bool
+- b
+    - c:int
+
+# Return Object with auth
+PUT hello/world/:id O E
+
+DELETE hello/world/:id O D
